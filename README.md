@@ -9,4 +9,4 @@ Professional Flutter application for real-time location tracking with address ge
 - Location history with timestamps
 - Permission handling for coarse/fine location
 - Clean MVVM architecture
-- Riverpod for state management
+- Getx state management
