@@ -1,12 +1,16 @@
-# Location Tracker - Flutter App
+# locationapp
 
-## Overview
-Professional Flutter application for real-time location tracking with address geocoding and history logging. Built with MVVM architecture and Riverpod state management.
+A new Flutter project.
 
-## Features
-- Real-time location tracking with live updates
-- Address conversion using Google Geocoding API
-- Location history with timestamps
-- Permission handling for coarse/fine location
-- Clean MVVM architecture
-- Getx state management
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

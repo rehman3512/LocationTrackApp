@@ -2,16 +2,18 @@ import 'package:geolocator/geolocator.dart';
 
 class LocationService {
 
+
   Future<LocationPermission> requestPermission() async {
     try {
+
       LocationPermission permission = await Geolocator.checkPermission();
 
-      if (permission == LocationPermission.denied ||
-          permission == LocationPermission.deniedForever) {
+      if (permission == LocationPermission.denied) {
         permission = await Geolocator.requestPermission();
       }
 
       return permission;
+
     } catch (e) {
       print("Permission error: $e");
       return LocationPermission.denied;
@@ -58,7 +60,7 @@ class LocationService {
       await Geolocator.openAppSettings();
     } catch (e) {
       print("Open app settings error: $e");
-      // Fallback: Show dialog
+
       throw Exception("Cannot open settings: $e");
     }
   }
